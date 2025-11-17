@@ -1,0 +1,491 @@
+09:02:44 20/09/2025 [m/INFO] Running log garbage cleaner ... 
+09:02:44 20/09/2025 [m/INFO] Deleting old log file: 202842_01092025.log ... 
+09:02:44 20/09/2025 [m/INFO] Deleting old log file: 202902_01092025.log ... 
+09:02:44 20/09/2025 [m/INFO] Deleting old log file: 204304_14092025.log ... 
+09:02:44 20/09/2025 [m/INFO] Deleting old log file: 204305_14092025.log ... 
+09:02:44 20/09/2025 [m/INFO] Deleting old log file: 204300_14092025.log ... 
+09:02:44 20/09/2025 [m/INFO] Log cleaner finished. 
+09:02:44 20/09/2025 [m/INFO] Finished starting up logging service. 
+09:02:44 20/09/2025 [a/INFO] Starting the application from windows ("Windows 10 Home Single Language" 10.0 (Build 26100)) ... 
+09:02:44 20/09/2025 [m/INFO] Clearing old firestore cache data ... 
+09:02:44 20/09/2025 [m/INFO] Deleting: C:\Users\ADMIN\AppData\Local\firestore\[DEFAULT]\neureader-cait 
+09:02:44 20/09/2025 [m/INFO] Old firestore cache data found! Deleting ... 
+09:02:44 20/09/2025 [m/INFO] Clearing old firestore cache data completed. 
+09:02:44 20/09/2025 [m/INFO] Set the workspace path to Directory: 'C:\Users\ADMIN\Documents' 
+09:02:44 20/09/2025 [a/INFO] Setting up internet-relating information ... 
+09:02:44 20/09/2025 [a/INFO] Finished set up Firebase application. 
+09:02:44 20/09/2025 [a/INFO] Signing in anonymously ... 
+09:02:46 20/09/2025 [a/INFO] Loading available categories ... 
+09:02:47 20/09/2025 [a/INFO] Loaded 5 categories from cloud server. 
+09:02:47 20/09/2025 [a/INFO] Loading login screen images ... 
+09:02:47 20/09/2025 [a/INFO] Loaded 4 login screen images. 
+09:02:47 20/09/2025 [a/INFO] Finished fetched remote configuration (5 categories). 
+09:02:47 20/09/2025 [a/INFO] Fetching all advertisements ... 
+09:02:47 20/09/2025 [a/INFO] Loaded 0 advertisements. 
+09:02:47 20/09/2025 [a/INFO] Successfully set up internet-relating information. 
+09:02:47 20/09/2025 [a/INFO] Configuring application's window specifications ... 
+09:02:47 20/09/2025 [a/INFO] Finished fetched all books' data (253 books). 
+09:02:47 20/09/2025 [a/INFO] Finished configured application's window specifications. 
+09:02:47 20/09/2025 [a/INFO] Loading device's info ... 
+09:02:47 20/09/2025 [m/INFO] Device info: desktop - WINDOWS&00342-42651-14436-AAOEM&Windows 11 Home Single Language 
+09:02:47 20/09/2025 [m/INFO] Application Version: 2.1.0. Build Version: 2 
+09:02:47 20/09/2025 [m/INFO] Initializing config.json file ... 
+09:02:47 20/09/2025 [m/WARNING] [CONFIG] Loading 'config.json''s content into configuration map. 
+09:02:47 20/09/2025 [a/INFO] Registering default settings ... 
+09:02:47 20/09/2025 [m/INFO] Loaded data from local storage. Data:
+{id: 11230562, last-login: 2025-09-14 20:43:17.539361, name: Pham Thanh Long, email: 11230562@st.neu.edu.vn} 
+09:02:47 20/09/2025 [a/INFO] Loading settings ... 
+09:02:47 20/09/2025 [m/INFO] Finished initializing config.json file. 
+09:02:47 20/09/2025 [m/INFO] Loading last-login user's information ... 
+09:02:47 20/09/2025 [m/INFO] Validate the authenticating time-out ... 
+09:02:47 20/09/2025 [m/INFO] Login time-out is valid. Creating account instance ... 
+09:02:48 20/09/2025 [m/INFO] Loaded account: 11230562 Pham Thanh Long. Last login: 2025-09-14 20:43:17.539361 
+09:02:48 20/09/2025 [m/INFO] Fetching user's self-upload documents ... 
+09:02:48 20/09/2025 [m/INFO] Found 0 self-upload documents of current user on cloud. 
+09:02:48 20/09/2025 [m/INFO] Loading local self-upload documents ... 
+09:02:48 20/09/2025 [m/INFO] Found 0 local self-upload documents. 
+09:02:48 20/09/2025 [a/INFO] Starting the app with signed in account ... 
+09:02:48 20/09/2025 [a/INFO] Checking for update ... 
+09:02:48 20/09/2025 [m/INFO] Internet status updated: connected 
+09:02:48 20/09/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+09:02:48 20/09/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+09:02:52 20/09/2025 [a/INFO] Checking for update ... 
+09:03:01 20/09/2025 [m/INFO] Internet status updated: disconnected 
+09:03:03 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:03 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:03 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F58.png?alt=media&token=9fb06009-05d4-4335-a531-4ba34f10f3a3 
+09:03:03 20/09/2025 [m/SEVERE]  
+09:03:04 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:04 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:04 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F198.jpg?alt=media&token=964eb0b0-e4b9-43b1-b061-99b207d58968 
+09:03:04 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F247.jpg?alt=media&token=613e8f40-a490-4284-be8c-e679e010e729 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F78.jpg?alt=media&token=3b8001f4-94b5-499a-98a8-93965960e7b6 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F222.jpg?alt=media&token=3f0f9e3e-0217-4bd5-a9ab-3bebf110b2bd 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F213.jpg?alt=media&token=745ccd59-da86-4e98-812a-4b7e181b4606 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F41.png?alt=media&token=4fcb21a2-29e7-4ad5-ac4b-1297218d8891 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F59.png?alt=media&token=600be074-52f1-4689-97d1-2957676fbd7d 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F53.png?alt=media&token=b8a7348a-98b2-4b84-ae84-b28ea358b1ea 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F40.png?alt=media&token=e0123120-8858-4541-8fbe-9db1b3019d32 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:05 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:05 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:05 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F75.jpg?alt=media&token=f6c0cdcb-d4ae-4712-a9a0-4e4189d9c33f 
+09:03:05 20/09/2025 [m/SEVERE]  
+09:03:11 20/09/2025 [m/INFO] Internet status updated: connected 
+09:03:12 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:12 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:12 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F126.jpg?alt=media&token=4491e60f-3cf0-4e77-8289-2fb567743f2b 
+09:03:12 20/09/2025 [m/SEVERE]  
+09:03:13 20/09/2025 [m/INFO] Preparing to download (Giáo trình Khởi sự kinh doanh) ... 
+09:03:14 20/09/2025 [a/INFO] Downloading Giáo trình Khởi sự kinh doanh (Sách) ... 
+09:03:16 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:16 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:16 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F210.jpg?alt=media&token=a8fc3184-bb25-4ab5-83d6-55d8f8bd8acf 
+09:03:16 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F55.png?alt=media&token=24cd8094-fe29-4bf2-8525-bdb39e638342 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F245.jpg?alt=media&token=2665ca7e-adfe-4331-ba00-7342521551c9 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F27.png?alt=media&token=874cd76e-924e-4c1a-aa13-2b66218821b5 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F109.png?alt=media&token=4e567b42-f808-47a1-a785-80ad94c5daee 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F110.jpg?alt=media&token=1fab9985-742c-4f57-bc5e-1750cfebf9d2 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F88.png?alt=media&token=250229a9-fbb2-46a3-8ebb-d90d91c9e308 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:17 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:17 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:17 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F230.jpg?alt=media&token=185c34ec-c68d-4030-9b72-0c6a3b1cf7a9 
+09:03:17 20/09/2025 [m/SEVERE]  
+09:03:18 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:18 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:18 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F11.png?alt=media&token=1a1a18fd-d396-4aa7-ae6d-58a856209498 
+09:03:18 20/09/2025 [m/SEVERE]  
+09:03:31 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:31 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:31 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:31 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:31 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F111.jpg?alt=media&token=5dd9ad80-fdc1-4a09-8d28-037105b21d88 
+09:03:31 20/09/2025 [m/SEVERE]  
+09:03:32 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:32 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:32 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:03:32 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:03:32 20/09/2025 [m/SEVERE] HttpException: Connection closed before full header was received, uri = https://firebasestorage.googleapis.com/v0/b/neureader-cait.appspot.com/o/covers%2F153.jpg?alt=media&token=d6b0c768-78b6-4adb-bfee-d4b61ad1fde1 
+09:03:32 20/09/2025 [m/SEVERE]  
+09:03:40 20/09/2025 [a/SEVERE] DioException [unknown]: null
+Error: HttpException: The semaphore timeout period has expired.
+, uri = https://api.github.com/repos/CAIT-NEU/NEU-READER/releases/test 
+09:03:40 20/09/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+09:04:10 20/09/2025 [a/INFO] Downloaded Giáo trình Khởi sự kinh doanh completed. 
+09:04:10 20/09/2025 [a/WARNING] Not found the annotation data. Bypassing ... 
+09:04:10 20/09/2025 [m/INFO] Finished downloading (Giáo trình Khởi sự kinh doanh) 
+09:06:09 20/09/2025 [a/INFO] Checking for update ... 
+09:06:10 20/09/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+09:06:10 20/09/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+09:06:14 20/09/2025 [a/INFO] Checking for update ... 
+09:06:14 20/09/2025 [m/INFO] Preparing PDF View for Giáo trình Khởi sự kinh doanh ... 
+09:06:14 20/09/2025 [m/INFO] Loading PDF File. File path: C:\Users\ADMIN\Documents/documents/NDRHacOhbyB0csOsbmggS2jhu59pIHPhu7Ega2luaCBkb2FuaA==.pdf 
+09:06:14 20/09/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+09:06:14 20/09/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+09:06:16 20/09/2025 [a/INFO] Loading local annotation ... 
+09:06:16 20/09/2025 [a/INFO] Setting up drawing canvases ... 
+09:10:52 20/09/2025 [m/INFO] Internet status updated: disconnected 
+09:11:02 20/09/2025 [m/INFO] Internet status updated: connected 
+09:13:40 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:13:40 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:13:40 20/09/2025 [m/SEVERE] HandshakeException: Connection terminated during handshake 
+09:13:40 20/09/2025 [m/SEVERE]  
+09:13:40 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:13:40 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:13:40 20/09/2025 [m/SEVERE] HandshakeException: Connection terminated during handshake 
+09:13:40 20/09/2025 [m/SEVERE]  
+09:13:40 20/09/2025 [m/SEVERE] Null check operator used on a null value 
+09:13:40 20/09/2025 [m/SEVERE] #0      State.setState (package:flutter/src/widgets/framework.dart:1223)
+#1      CachedNetworkImageState.initState.<anonymous closure> (package:neu_reader/components/cached_network_image.dart:55)
+#2      ImageStreamCompleter.reportError (package:flutter/src/painting/image_stream.dart:826)
+#3      new MultiFrameImageStreamCompleter.<anonymous closure> (package:flutter/src/painting/image_stream.dart:974)
+#4      _RootZone.runBinary (dart:async/zone.dart:1666)
+#5      _FutureListener.handleError (dart:async/future_impl.dart:178)
+#6      Future._propagateToListeners.handleError (dart:async/future_impl.dart:873)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:894)
+#8      Future._completeError (dart:async/future_impl.dart:674)
+<asynchronous suspension>
+ 
+09:13:40 20/09/2025 [m/SEVERE] HandshakeException: Connection terminated during handshake 
+09:13:40 20/09/2025 [m/SEVERE]  

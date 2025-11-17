@@ -1,0 +1,10 @@
+{
+    "model_name": "CatBoost",
+    "n_features": 199,
+    "needs_scaling": false,
+    "best_scaler": null,
+    "test_mae": 1.1192381412101455,
+    "test_r2": 0.9090256270003578,
+    "training_samples": 3651,
+    "export_date": "2025-11-17 14:02:39"
+}

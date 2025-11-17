@@ -1,0 +1,134 @@
+16:05:31 17/10/2025 [m/INFO] Finished starting up logging service. 
+16:05:31 17/10/2025 [a/INFO] Starting the application from windows ("Windows 10 Home Single Language" 10.0 (Build 26100)) ... 
+16:05:31 17/10/2025 [m/INFO] Clearing old firestore cache data ... 
+16:05:31 17/10/2025 [m/INFO] Deleting: C:\Users\ADMIN\AppData\Local\firestore\[DEFAULT]\neureader-cait 
+16:05:31 17/10/2025 [m/INFO] Old firestore cache data found! Deleting ... 
+16:05:31 17/10/2025 [m/INFO] Clearing old firestore cache data completed. 
+16:05:31 17/10/2025 [m/INFO] Set the workspace path to Directory: 'C:\Users\ADMIN\Documents' 
+16:05:32 17/10/2025 [a/INFO] Setting up internet-relating information ... 
+16:05:32 17/10/2025 [a/INFO] Finished set up Firebase application. 
+16:05:32 17/10/2025 [a/INFO] Signing in anonymously ... 
+16:05:33 17/10/2025 [a/INFO] Loading available categories ... 
+16:05:34 17/10/2025 [a/INFO] Loaded 5 categories from cloud server. 
+16:05:34 17/10/2025 [a/INFO] Loading login screen images ... 
+16:05:34 17/10/2025 [a/INFO] Loaded 4 login screen images. 
+16:05:34 17/10/2025 [a/INFO] Finished fetched remote configuration (5 categories). 
+16:05:34 17/10/2025 [a/INFO] Fetching all advertisements ... 
+16:05:34 17/10/2025 [a/INFO] Loaded 0 advertisements. 
+16:05:34 17/10/2025 [a/INFO] Successfully set up internet-relating information. 
+16:05:34 17/10/2025 [a/INFO] Configuring application's window specifications ... 
+16:05:34 17/10/2025 [a/INFO] Finished fetched all books' data (253 books). 
+16:05:34 17/10/2025 [a/INFO] Finished configured application's window specifications. 
+16:05:34 17/10/2025 [a/INFO] Loading device's info ... 
+16:05:34 17/10/2025 [m/INFO] Device info: desktop - WINDOWS&00342-42651-14436-AAOEM&Windows 11 Home Single Language 
+16:05:34 17/10/2025 [m/INFO] Application Version: 2.1.0. Build Version: 2 
+16:05:34 17/10/2025 [m/INFO] Initializing config.json file ... 
+16:05:34 17/10/2025 [m/WARNING] [CONFIG] Loading 'config.json''s content into configuration map. 
+16:05:34 17/10/2025 [a/INFO] Registering default settings ... 
+16:05:34 17/10/2025 [m/INFO] Loaded data from local storage. Data:
+{id: 11230562, last-login: 2025-09-14 20:43:17.539361, name: Pham Thanh Long, email: 11230562@st.neu.edu.vn} 
+16:05:34 17/10/2025 [a/INFO] Loading settings ... 
+16:05:34 17/10/2025 [m/INFO] Finished initializing config.json file. 
+16:05:34 17/10/2025 [m/INFO] Loading last-login user's information ... 
+16:05:34 17/10/2025 [m/INFO] Validate the authenticating time-out ... 
+16:05:34 17/10/2025 [m/INFO] Login time-out (surpass 30 days limit), the last user's information will be deleted. 
+16:05:34 17/10/2025 [m/INFO] Clearing last-login user data ... 
+16:05:34 17/10/2025 [a/INFO] Starting the app with login screen ... 
+16:05:34 17/10/2025 [a/INFO] Checking for update ... 
+16:05:35 17/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+16:05:35 17/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+16:05:38 17/10/2025 [a/INFO] Checking for update ... 
+16:05:38 17/10/2025 [a/INFO] Checking for update ... 
+16:05:38 17/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+16:05:38 17/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+16:05:39 17/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+16:05:39 17/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+16:05:39 17/10/2025 [a/INFO] Logging in with student's Microsoft account method ... 
+16:05:39 17/10/2025 [a/INFO] Waiting for browser authenticating ... 
+16:05:45 17/10/2025 [a/INFO] Fetching user's data from database ... 
+16:05:46 17/10/2025 [a/INFO] Authenticated successfully. User id: 11230562 
+16:05:46 17/10/2025 [a/INFO] Navigating to main screen ... 
+16:05:46 17/10/2025 [a/INFO] Storing last-login user data ... 
+16:05:46 17/10/2025 [a/INFO] Checking for update ... 
+16:05:46 17/10/2025 [m/INFO] Internet status updated: connected 
+16:05:46 17/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+16:05:46 17/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+16:05:50 17/10/2025 [a/INFO] Checking for update ... 
+16:05:50 17/10/2025 [m/INFO] Preparing PDF View for Giáo trình Quản trị Marketing ... 
+16:05:50 17/10/2025 [m/INFO] Loading PDF File. File path: C:\Users\ADMIN\Documents/documents/MTlHacOhbyB0csOsbmggUXXhuqNuIHRy4buLIE1hcmtldGluZw==.pdf 
+16:05:51 17/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+16:05:51 17/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+16:05:51 17/10/2025 [a/INFO] Loading local annotation ... 
+16:05:51 17/10/2025 [a/INFO] Setting up drawing canvases ... 
+16:25:06 17/10/2025 [m/INFO] Internet status updated: disconnected 
+16:25:09 17/10/2025 [m/INFO] Internet status updated: connected 
+17:53:55 17/10/2025 [m/INFO] Internet status updated: disconnected 
+18:05:53 17/10/2025 [m/INFO] Internet status updated: connected 
+19:36:30 17/10/2025 [m/INFO] Internet status updated: disconnected 
+19:36:42 17/10/2025 [m/INFO] Internet status updated: connected 
+19:42:58 17/10/2025 [m/INFO] Internet status updated: disconnected 
+19:43:08 17/10/2025 [m/INFO] Internet status updated: connected 
+19:45:57 17/10/2025 [m/INFO] Internet status updated: disconnected 
+19:46:08 17/10/2025 [m/INFO] Internet status updated: connected 
+20:00:48 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:00:59 17/10/2025 [m/INFO] Internet status updated: connected 
+20:01:12 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:01:36 17/10/2025 [m/INFO] Internet status updated: connected 
+20:01:49 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:02:00 17/10/2025 [m/INFO] Internet status updated: connected 
+20:03:39 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:03:49 17/10/2025 [m/INFO] Internet status updated: connected 
+20:06:35 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:06:46 17/10/2025 [m/INFO] Internet status updated: connected 
+20:08:45 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:09:24 17/10/2025 [m/INFO] Internet status updated: connected 
+20:10:00 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:10:23 17/10/2025 [m/INFO] Internet status updated: connected 
+20:10:36 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:10:49 17/10/2025 [m/INFO] Internet status updated: connected 
+20:10:57 17/10/2025 [m/INFO] Internet status updated: disconnected 
+20:11:02 17/10/2025 [m/INFO] Internet status updated: connected 
+20:24:12 17/10/2025 [m/INFO] Internet status updated: disconnected 
+21:36:14 17/10/2025 [m/INFO] Internet status updated: connected 
+06:12:42 18/10/2025 [m/INFO] Internet status updated: disconnected 
+07:03:36 18/10/2025 [m/INFO] Internet status updated: connected 

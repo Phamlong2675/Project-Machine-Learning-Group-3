@@ -1,0 +1,604 @@
+19:10:12 11/10/2025 [m/INFO] Finished starting up logging service. 
+19:10:12 11/10/2025 [a/INFO] Starting the application from windows ("Windows 10 Home Single Language" 10.0 (Build 26100)) ... 
+19:10:12 11/10/2025 [m/INFO] Clearing old firestore cache data ... 
+19:10:12 11/10/2025 [m/INFO] Deleting: C:\Users\ADMIN\AppData\Local\firestore\[DEFAULT]\neureader-cait 
+19:10:12 11/10/2025 [m/INFO] Old firestore cache data found! Deleting ... 
+19:10:12 11/10/2025 [m/INFO] Clearing old firestore cache data completed. 
+19:10:12 11/10/2025 [m/INFO] Set the workspace path to Directory: 'C:\Users\ADMIN\Documents' 
+19:10:12 11/10/2025 [a/INFO] Setting up internet-relating information ... 
+19:10:12 11/10/2025 [a/INFO] Finished set up Firebase application. 
+19:10:12 11/10/2025 [a/INFO] Signing in anonymously ... 
+19:10:14 11/10/2025 [a/INFO] Loading available categories ... 
+19:10:15 11/10/2025 [a/INFO] Loaded 5 categories from cloud server. 
+19:10:15 11/10/2025 [a/INFO] Loading login screen images ... 
+19:10:15 11/10/2025 [a/INFO] Loaded 4 login screen images. 
+19:10:15 11/10/2025 [a/INFO] Finished fetched remote configuration (5 categories). 
+19:10:15 11/10/2025 [a/INFO] Fetching all advertisements ... 
+19:10:15 11/10/2025 [a/INFO] Loaded 0 advertisements. 
+19:10:15 11/10/2025 [a/INFO] Successfully set up internet-relating information. 
+19:10:15 11/10/2025 [a/INFO] Configuring application's window specifications ... 
+19:10:15 11/10/2025 [a/INFO] Finished fetched all books' data (253 books). 
+19:10:15 11/10/2025 [a/INFO] Finished configured application's window specifications. 
+19:10:15 11/10/2025 [a/INFO] Loading device's info ... 
+19:10:15 11/10/2025 [m/INFO] Device info: desktop - WINDOWS&00342-42651-14436-AAOEM&Windows 11 Home Single Language 
+19:10:15 11/10/2025 [m/INFO] Application Version: 2.1.0. Build Version: 2 
+19:10:15 11/10/2025 [m/INFO] Initializing config.json file ... 
+19:10:15 11/10/2025 [m/WARNING] [CONFIG] Loading 'config.json''s content into configuration map. 
+19:10:15 11/10/2025 [a/INFO] Registering default settings ... 
+19:10:15 11/10/2025 [m/INFO] Loaded data from local storage. Data:
+{id: 11230562, last-login: 2025-09-14 20:43:17.539361, name: Pham Thanh Long, email: 11230562@st.neu.edu.vn} 
+19:10:15 11/10/2025 [a/INFO] Loading settings ... 
+19:10:15 11/10/2025 [m/INFO] Finished initializing config.json file. 
+19:10:15 11/10/2025 [m/INFO] Loading last-login user's information ... 
+19:10:15 11/10/2025 [m/INFO] Validate the authenticating time-out ... 
+19:10:15 11/10/2025 [m/INFO] Login time-out is valid. Creating account instance ... 
+19:10:16 11/10/2025 [m/INFO] Loaded account: 11230562 Pham Thanh Long. Last login: 2025-09-14 20:43:17.539361 
+19:10:16 11/10/2025 [m/INFO] Fetching user's self-upload documents ... 
+19:10:16 11/10/2025 [m/INFO] Found 0 self-upload documents of current user on cloud. 
+19:10:16 11/10/2025 [m/INFO] Loading local self-upload documents ... 
+19:10:16 11/10/2025 [m/INFO] Found 0 local self-upload documents. 
+19:10:16 11/10/2025 [a/INFO] Starting the app with signed in account ... 
+19:10:16 11/10/2025 [a/INFO] Checking for update ... 
+19:10:16 11/10/2025 [m/INFO] Internet status updated: connected 
+19:10:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:10:20 11/10/2025 [a/INFO] Checking for update ... 
+19:10:20 11/10/2025 [m/INFO] Preparing PDF View for Giáo trình Quản trị Marketing ... 
+19:10:20 11/10/2025 [m/INFO] Loading PDF File. File path: C:\Users\ADMIN\Documents/documents/MTlHacOhbyB0csOsbmggUXXhuqNuIHRy4buLIE1hcmtldGluZw==.pdf 
+19:10:20 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:20 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:10:21 11/10/2025 [a/INFO] Loading local annotation ... 
+19:10:21 11/10/2025 [a/INFO] Setting up drawing canvases ... 
+19:10:52 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: true 
+19:10:52 11/10/2025 [a/INFO] Checking for update ... 
+19:10:52 11/10/2025 [a/INFO] Checking for update ... 
+19:10:52 11/10/2025 [a/INFO] Checking for update ... 
+19:10:52 11/10/2025 [a/INFO] Checking for update ... 
+19:10:53 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:53 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:10:53 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:53 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:10:53 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:53 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:10:53 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:10:53 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:13:47 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: false 
+19:13:47 11/10/2025 [a/INFO] Checking for update ... 
+19:13:47 11/10/2025 [a/INFO] Checking for update ... 
+19:13:47 11/10/2025 [a/INFO] Checking for update ... 
+19:13:47 11/10/2025 [a/INFO] Checking for update ... 
+19:13:47 11/10/2025 [a/INFO] Checking for update ... 
+19:13:52 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:13:52 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:13:52 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:13:52 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:13:52 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:13:52 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:13:52 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:13:52 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:13:52 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:13:52 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:14:56 11/10/2025 [m/INFO] Internet status updated: disconnected 
+19:15:03 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: true 
+19:15:03 11/10/2025 [a/INFO] Checking for update ... 
+19:15:03 11/10/2025 [a/INFO] Checking for update ... 
+19:15:03 11/10/2025 [a/INFO] Checking for update ... 
+19:15:03 11/10/2025 [a/INFO] Checking for update ... 
+19:15:03 11/10/2025 [a/INFO] Checking for update ... 
+19:15:04 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:04 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:04 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:04 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:04 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:04 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:04 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:04 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:04 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:04 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:07 11/10/2025 [m/INFO] Internet status updated: connected 
+19:15:29 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: false 
+19:15:29 11/10/2025 [a/INFO] Checking for update ... 
+19:15:29 11/10/2025 [a/INFO] Checking for update ... 
+19:15:29 11/10/2025 [a/INFO] Checking for update ... 
+19:15:30 11/10/2025 [a/INFO] Checking for update ... 
+19:15:30 11/10/2025 [a/INFO] Checking for update ... 
+19:15:33 11/10/2025 [a/WARNING] Cannot launch the auto update service because there is no internet connection 
+19:15:33 11/10/2025 [a/WARNING] Cannot launch the auto update service because there is no internet connection 
+19:15:34 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:34 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:34 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:34 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:34 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:15:34 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:15:41 11/10/2025 [m/INFO] Internet status updated: disconnected 
+19:15:52 11/10/2025 [m/INFO] Internet status updated: connected 
+19:15:57 11/10/2025 [m/INFO] Internet status updated: disconnected 
+19:16:07 11/10/2025 [m/INFO] Internet status updated: connected 
+19:16:15 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: true 
+19:16:15 11/10/2025 [a/INFO] Checking for update ... 
+19:16:15 11/10/2025 [a/INFO] Checking for update ... 
+19:16:15 11/10/2025 [a/INFO] Checking for update ... 
+19:16:15 11/10/2025 [a/INFO] Checking for update ... 
+19:16:15 11/10/2025 [a/INFO] Checking for update ... 
+19:16:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:17 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:17 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:30 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: false 
+19:16:30 11/10/2025 [a/INFO] Checking for update ... 
+19:16:30 11/10/2025 [a/INFO] Checking for update ... 
+19:16:30 11/10/2025 [a/INFO] Checking for update ... 
+19:16:30 11/10/2025 [a/INFO] Checking for update ... 
+19:16:30 11/10/2025 [a/INFO] Checking for update ... 
+19:16:31 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:31 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:31 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:31 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:31 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:31 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:31 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:31 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:16:31 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:16:31 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:17:50 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: true 
+19:17:50 11/10/2025 [a/INFO] Checking for update ... 
+19:17:50 11/10/2025 [a/INFO] Checking for update ... 
+19:17:50 11/10/2025 [a/INFO] Checking for update ... 
+19:17:50 11/10/2025 [a/INFO] Checking for update ... 
+19:17:50 11/10/2025 [a/INFO] Checking for update ... 
+19:17:51 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:17:51 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:17:51 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:17:51 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:17:51 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:17:51 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:17:51 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:17:51 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:17:51 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:17:51 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:19:22 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: false 
+19:19:22 11/10/2025 [a/INFO] Checking for update ... 
+19:19:22 11/10/2025 [a/INFO] Checking for update ... 
+19:19:22 11/10/2025 [a/INFO] Checking for update ... 
+19:19:22 11/10/2025 [a/INFO] Checking for update ... 
+19:19:22 11/10/2025 [a/INFO] Checking for update ... 
+19:19:23 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:19:23 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:19:23 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:19:23 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:19:23 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:19:23 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:19:23 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:19:23 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:19:23 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:19:23 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:20:10 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: true 
+19:20:10 11/10/2025 [a/INFO] Checking for update ... 
+19:20:10 11/10/2025 [a/INFO] Checking for update ... 
+19:20:10 11/10/2025 [a/INFO] Checking for update ... 
+19:20:10 11/10/2025 [a/INFO] Checking for update ... 
+19:20:10 11/10/2025 [a/INFO] Checking for update ... 
+19:20:11 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:20:11 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:20:11 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:20:11 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:20:11 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:20:11 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:20:11 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:20:11 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:20:11 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:20:11 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:21:18 11/10/2025 [m/INFO] Toggled fullscreen mode in PDF View. In fullscreen: false 
+19:21:18 11/10/2025 [a/INFO] Checking for update ... 
+19:21:18 11/10/2025 [a/INFO] Checking for update ... 
+19:21:18 11/10/2025 [a/INFO] Checking for update ... 
+19:21:18 11/10/2025 [a/INFO] Checking for update ... 
+19:21:18 11/10/2025 [a/INFO] Checking for update ... 
+19:21:19 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:21:19 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:21:19 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:21:19 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:21:19 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:21:19 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:21:19 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:21:19 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 
+19:21:19 11/10/2025 [a/SEVERE] DioException [bad response]: This exception was thrown because the response has a status code of 404 and RequestOptions.validateStatus was configured to throw for this status code.
+The status code of 404 has the following meaning: "Client error - the request contains bad syntax or cannot be fulfilled"
+Read more about status codes at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+In order to resolve this exception you typically have either to verify and fix your request code or you have to fix the server code.
+ 
+19:21:19 11/10/2025 [a/SEVERE] #0      DioMixin.fetch (package:dio/src/dio_mixin.dart:520)
+<asynchronous suspension>
+#1      NEUReader.checkUpdate.<anonymous closure> (package:neu_reader/main.dart:392)
+<asynchronous suspension>
+ 

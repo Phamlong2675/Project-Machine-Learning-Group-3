@@ -7,7 +7,7 @@ from datetime import datetime # Import datetime
 
 # --- LƯU Ý QUAN TRỌNG ---
 # Hãy đảm bảo các file .xlsx của bạn nằm đúng đường dẫn 
-# (ví dụ: '../data/processed/train_data.xlsx') 
+# (ví dụ: 'data/processed/train_data.xlsx') 
 # so với nơi bạn chạy file app.py này.
 
 # --- HÀM 1: Tải dữ liệu cho Tab 2 (Daily Forecast) ---
@@ -15,7 +15,7 @@ def load_daily_data():
     """Tải dữ liệu test_data.xlsx (dùng cho tab Daily Forecast)."""
     try:
         # Chỉ tải test_data.xlsx
-        test_data = pd.read_excel('../data/processed/test_data.xlsx')
+        test_data = pd.read_excel('data/processed/test_data.xlsx')
         test_data['datetime'] = pd.to_datetime(test_data['datetime'])
         print("SUCCESS: Đã tải 'test_data.xlsx' cho Daily Forecast.")
         return test_data
@@ -38,7 +38,7 @@ def load_hourly_data():
     """Tải dữ liệu test_data_h.xlsx (dùng cho tab Hourly Forecast)."""
     try:
         # Chỉ tải test_data_h.xlsx
-        test_data_h = pd.read_excel('../data/processed/test_data_h.xlsx')
+        test_data_h = pd.read_excel('data/processed/test_data_h.xlsx')
         test_data_h['datetime'] = pd.to_datetime(test_data_h['datetime'])
         print("SUCCESS: Đã tải 'test_data_h.xlsx' cho Hourly Forecast.")
         return test_data_h
@@ -56,7 +56,7 @@ def preload_historical_data():
     Tải và ghép 3 file (train, val, test) cho tab Historical Analysis.
     """
     try:
-        base_path = '../data/processed/'
+        base_path = 'data/processed/'
         train_file = base_path + 'train_data.xlsx'
         val_file = base_path + 'val_data.xlsx'
         test_file = base_path + 'test_data.xlsx'
