@@ -3,21 +3,14 @@ import plotly.graph_objects as go
 import gradio as gr
 from datetime import timedelta
 import numpy as np
-from datetime import datetime # Import datetime
+from datetime import datetime
 
-# --- LƯU Ý QUAN TRỌNG ---
-# Hãy đảm bảo các file .xlsx của bạn nằm đúng đường dẫn 
-# (ví dụ: 'data/processed/train_data.xlsx') 
-# so với nơi bạn chạy file app.py này.
-
-# --- HÀM 1: Tải dữ liệu cho Tab 2 (Daily Forecast) ---
 def load_daily_data():
-    """Tải dữ liệu test_data.xlsx (dùng cho tab Daily Forecast)."""
+    """Loads test_data.xlsx (used for the Daily Forecast tab)."""
     try:
-        # Chỉ tải test_data.xlsx
         test_data = pd.read_excel('data/processed/test_data.xlsx')
         test_data['datetime'] = pd.to_datetime(test_data['datetime'])
-        print("SUCCESS: Đã tải 'test_data.xlsx' cho Daily Forecast.")
+        print("SUCCESS: Loaded 'test_data.xlsx' for Daily Forecast.")
         return test_data
     except FileNotFoundError:
         print("WARNING: test_data.xlsx not found. Using dummy daily data.")
@@ -33,14 +26,12 @@ def load_daily_data():
         })
         return test_data
 
-# --- HÀM 2: Tải dữ liệu cho Tab 3 (Hourly Forecast) ---
 def load_hourly_data():
-    """Tải dữ liệu test_data_h.xlsx (dùng cho tab Hourly Forecast)."""
+    """Loads test_data_h.xlsx (used for the Hourly Forecast tab)."""
     try:
-        # Chỉ tải test_data_h.xlsx
         test_data_h = pd.read_excel('data/processed/test_data_h.xlsx')
         test_data_h['datetime'] = pd.to_datetime(test_data_h['datetime'])
-        print("SUCCESS: Đã tải 'test_data_h.xlsx' cho Hourly Forecast.")
+        print("SUCCESS: Loaded 'test_data_h.xlsx' for Hourly Forecast.")
         return test_data_h
     except FileNotFoundError:
         print("WARNING: test_data_h.xlsx not found. Using dummy hourly data.")
@@ -49,11 +40,10 @@ def load_hourly_data():
         test_data_h = pd.DataFrame({'datetime': hourly_index, 'temp': temps_h})
         return test_data_h
 
-# --- HÀM 3 (PHỤ): Tải trước dữ liệu lịch sử ---
 def preload_historical_data():
     """
-    (Hàm này chỉ chạy 1 lần)
-    Tải và ghép 3 file (train, val, test) cho tab Historical Analysis.
+    (This function runs only once on startup)
+    Loads and concatenates 3 files (train, val, test) for the Historical Analysis tab.
     """
     try:
         base_path = 'data/processed/'
@@ -70,16 +60,16 @@ def preload_historical_data():
         
         required_cols = ['datetime', 'temp', 'humidity', 'windspeed'] 
         if not all(col in all_data.columns for col in required_cols):
-            print(f"ERROR: Dữ liệu ghép (train, val, test) thiếu cột. Cần có: {required_cols}")
-            raise FileNotFoundError("Dữ liệu ghép bị thiếu cột.")
+            print(f"ERROR: Concatenated data (train, val, test) is missing columns. Required: {required_cols}")
+            raise FileNotFoundError("Concatenated data is missing columns.")
             
-        print(f"SUCCESS: Đã tải và ghép 3 file (train, val, test) vào bộ nhớ.")
-        # Sắp xếp để tìm min/max chính xác
+        print(f"SUCCESS: Loaded and concatenated 3 files (train, val, test) into memory.")
+        # Sort to find min/max dates correctly
         all_data = all_data.sort_values(by='datetime')
         return all_data
 
     except FileNotFoundError as e:
-        print(f"WARNING: Không tìm thấy file (lỗi: {e}). Dùng data giả (historical).")
+        print(f"WARNING: Could not find files (Error: {e}). Using dummy historical data.")
         
         days = pd.date_range('2024-01-01', periods=700, freq='D')
         temps = np.random.uniform(15, 35, size=len(days)) + np.sin(np.arange(len(days)) * 0.02) * 5
@@ -94,25 +84,25 @@ def preload_historical_data():
         })
         return full_data
 
-# --- CẬP NHẬT: Tải dữ liệu lịch sử 1 LẦN DUY NHẤT ---
+# --- Load historical data ONCE on startup ---
 GLOBAL_HISTORY_DATA = preload_historical_data()
 
-# --- CẬP NHẬT: Lấy ngày min/max từ dữ liệu đã tải ---
+# --- Get min/max dates from the preloaded data ---
 DEFAULT_START_DATE = GLOBAL_HISTORY_DATA['datetime'].min().strftime("%Y-%m-%d")
 DEFAULT_END_DATE = GLOBAL_HISTORY_DATA['datetime'].max().strftime("%Y-%m-%d")
 
 
-# --- HÀM 3 (CHÍNH): Trả về dữ liệu đã tải ---
+# --- FUNCTION 3 (MAIN): Return preloaded data ---
 def load_full_history_data():
     """
-    (Hàm này được gọi bởi Tab 1)
-    Chỉ trả về dữ liệu lịch sử đã được tải vào biến GLOBAL.
+    (This function is called by Tab 1)
+    Returns the globally preloaded historical data.
     """
-    print("INFO: Trả về GLOBAL_HISTORY_DATA từ bộ nhớ.")
+    print("INFO: Returning GLOBAL_HISTORY_DATA from memory.")
     return GLOBAL_HISTORY_DATA
 
 
-# --- Weather icon ---
+# --- Weather icon helper ---
 def get_weather_icon(temp):
     if temp >= 28:
         return "☀️"    # Hot
@@ -123,18 +113,18 @@ def get_weather_icon(temp):
     else:
         return "❄️"    # Cold
 
-# --- Daily forecast (Sử dụng load_daily_data) ---
+# --- Daily forecast (Uses load_daily_data) ---
 def create_daily_forecast():
-    # Gọi hàm tải dữ liệu của riêng nó (load_daily_data)
+    # Load its specific data
     test_data = load_daily_data()
     
     history_days = 10
-    # Lấy 10 ngày cuối cùng của *test_data* làm lịch sử
+    # Get the last 10 days from *test_data* as history
     history_df = test_data[['datetime','temp']].copy().sort_values(by='datetime').tail(history_days)
     history_df = history_df.rename(columns={'temp':'temperature'})
     history_df['icon'] = history_df['temperature'].apply(get_weather_icon)
 
-    # Dữ liệu dự báo (vẫn giữ nguyên)
+    # Forecast data (hardcoded)
     future_dates = pd.to_datetime(['2025-10-02','2025-10-03','2025-10-04','2025-10-05','2025-10-06'])
     future_temps = [27.98, 28.94, 28.05, 28.13, 28.30]
     lower_temps = [26.44, 27.40, 26.51, 26.60, 26.77]
@@ -149,7 +139,7 @@ def create_daily_forecast():
 
     combined_df = pd.concat([history_df, future_df], ignore_index=True)
 
-    # --- Plotly chart (Giữ nguyên) ---
+    # --- Plotly chart ---
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=history_df['datetime'],
@@ -249,15 +239,13 @@ def create_daily_forecast():
         icon = combined_df.iloc[i]['icon']
         color_bg = '#ffffff' if i < len(history_df) else '#fff8dc'
         
-        # --- BẮT ĐẦU SỬA LỖI ---
         style_overrides = ""
-        # Kiểm tra xem đây có phải là item cuối cùng của history_df không
+        # Check if this is the last item of history_df
         if i == len(history_df) - 1:
-            # Tăng transform: scale(1.12)
+            # Scale up and add red border
             style_overrides = "border: 3px solid #E74C3C; transform: scale(1.12); z-index: 10; box-shadow: 0 6px 12px rgba(0,0,0,0.15);"
         else:
             style_overrides = "border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.05);"
-        # --- KẾT THÚC SỬA LỖI ---
         
         html_output += f"""
         <div style='border-radius:12px; padding:20px; min-width:130px; 
@@ -272,18 +260,18 @@ def create_daily_forecast():
     html_output += "</div>"
     return fig, html_output
 
-# --- Hourly forecast (Sử dụng load_hourly_data) ---
+# --- Hourly forecast (Uses load_hourly_data) ---
 def create_hourly_forecast():
-    # Gọi hàm tải dữ liệu của riêng nó (load_hourly_data)
+    # Load its specific data
     test_data_h = load_hourly_data()
 
     history_hours = 12
-    # Lấy 12 giờ cuối cùng của *test_data_h* làm lịch sử
+    # Get the last 12 hours from *test_data_h* as history
     history_df = test_data_h[['datetime','temp']].copy().sort_values(by='datetime').tail(history_hours)
     history_df = history_df.rename(columns={'temp':'temperature'})
     history_df['icon'] = history_df['temperature'].apply(get_weather_icon)
 
-    # Dữ liệu dự báo (vẫn giữ nguyên)
+    # Forecast data (hardcoded)
     future_dates = [history_df['datetime'].max() + pd.Timedelta(hours=i+1) for i in range(3)]
     future_temps = [26.68, 26.53, 26.15]
     lower_temps = [26.02, 25.87, 25.49]
@@ -298,7 +286,7 @@ def create_hourly_forecast():
 
     combined_df = pd.concat([history_df, future_df], ignore_index=True)
 
-    # --- Plotly chart (Giữ nguyên) ---
+    # --- Plotly chart ---
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=history_df['datetime'],
@@ -392,15 +380,13 @@ def create_hourly_forecast():
         time_str = dt.strftime('%d-%m %H:%M')
         color_bg = '#ffffff' if i < len(history_df) else '#fff8dc'
         
-        # --- BẮT ĐẦU SỬA LỖI ---
         style_overrides = ""
-        # Kiểm tra xem đây có phải là item cuối cùng của history_df không
+        # Check if this is the last item of history_df
         if i == len(history_df) - 1:
-            # Tăng transform: scale(1.12)
+            # Scale up and add red border
             style_overrides = "border: 3px solid #E74C3C; transform: scale(1.12); z-index: 10; box-shadow: 0 6px 12px rgba(0,0,0,0.15);"
         else:
             style_overrides = "border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.05);"
-        # --- KẾT THÚC SỬA LỖI ---
             
         html_output += f"""
         <div style='border-radius:12px; padding:20px; min-width:130px; 
@@ -415,38 +401,39 @@ def create_hourly_forecast():
     return fig, html_output
 
 
+# --- Handler function for the historical tab (Uses load_full_history_data) ---
 def analyze_history(start_date, end_date):
-    """Lọc dữ liệu, tính toán và vẽ biểu đồ cho tab lịch sử."""
+    """Filters data, calculates stats, and draws the plot for the historical tab."""
     
-    # 1. Kiểm tra input (gr.Textbox có thể rỗng)
+    # 1. Validate input (Textbox can be empty)
     if not start_date or not end_date:
-        return go.Figure().update_layout(title="Vui lòng nhập ngày bắt đầu và kết thúc"), "<p style='color:red; text-align:center;'>Vui lòng nhập cả ngày bắt đầu và kết thúc (YYYY-MM-DD).</p>"
+        return go.Figure().update_layout(title="Please enter a start and end date"), "<p style='color:red; text-align:center;'>Please enter both a start and end date (YYYY-MM-DD).</p>"
     
     try:
-        # Chuyển đổi sang datetime 
+        # Convert text input to datetime
         start_dt = pd.to_datetime(start_date)
         end_dt = pd.to_datetime(end_date)
     except Exception as e:
-        return go.Figure().update_layout(title="Lỗi định dạng ngày"), f"<p style='color:red; text-align:center;'>Định dạng ngày không hợp lệ. Vui lòng nhập theo dạng YYYY-MM-DD. Lỗi: {e}</p>"
+        return go.Figure().update_layout(title="Invalid Date Format"), f"<p style='color:red; text-align:center;'>Invalid date format. Please use YYYY-MM-DD. Error: {e}</p>"
 
     
     if start_dt > end_dt:
-        return go.Figure().update_layout(title="Lỗi ngày"), "<p style='color:red; text-align:center;'>Ngày bắt đầu không được lớn hơn ngày kết thúc.</p>"
+        return go.Figure().update_layout(title="Date Error"), "<p style='color:red; text-align:center;'>Start date cannot be after the end date.</p>"
 
-    # 2. Tải và lọc dữ liệu (Lấy từ GLOBAL đã tải sẵn)
+    # 2. Load and filter data (Get from preloaded GLOBAL variable)
     all_data = load_full_history_data()
     mask = (all_data['datetime'] >= start_dt) & (all_data['datetime'] <= end_dt)
     df = all_data[mask]
     
     if df.empty:
-        return go.Figure().update_layout(title="Không có dữ liệu"), f"<p style='text-align:center;'>Không tìm thấy dữ liệu trong khoảng từ {start_date} đến {end_date}.</p>"
+        return go.Figure().update_layout(title="No Data"), f"<p style='text-align:center;'>No data found for the selected range: {start_date} to {end_date}.</p>"
     
-    # 3. Tính toán các chỉ số trung bình (dùng 'windspeed')
+    # 3. Calculate average stats (using 'windspeed')
     avg_temp = df['temp'].mean()
     avg_humidity = df['humidity'].mean()
     avg_wind = df['windspeed'].mean() 
     
-    # 4. Tạo HTML output cho các chỉ số
+    # 4. Create HTML output for stats
     stats_html = f"""
     <div style='display: flex; gap: 20px; justify-content: space-around; text-align: center; padding: 10px;'>
         <div style='background-color: #e0f0ff; padding: 15px; border-radius: 10px; flex-grow: 1;'>
@@ -464,7 +451,7 @@ def analyze_history(start_date, end_date):
     </div>
     """
     
-    # 5. Tạo biểu đồ Plotly
+    # 5. Create Plotly figure
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=df['datetime'],
@@ -485,17 +472,16 @@ def analyze_history(start_date, end_date):
     )
             
     return fig, stats_html
-# --- KẾT THÚC HÀM BỊ THIẾU ---
 
 
-# --- Load all forecasts (Chỉ gọi hàm cho 2 tab dự báo) ---
+# --- Load all forecasts (Calls functions for the two forecast tabs) ---
 def load_all_forecasts():
-    """Hàm này CHỈ gọi các hàm con để tạo giao diện DỰ BÁO."""
+    """This function calls the creation functions for the FORECAST tabs."""
     fig_daily, html_daily = create_daily_forecast()
     fig_hourly, html_hourly = create_hourly_forecast()
     return fig_daily, html_daily, fig_hourly, html_hourly
 
-# --- Gradio interface ---
+# --- Gradio interface CSS ---
 css_code = """
 .gradio-container {
     background-image: url('https://raw.githubusercontent.com/tungvoi38/Machine_Learning_Group_3/main/temperature_prediction_Hanoi/notebooks/cloud.png') !important;
@@ -510,7 +496,7 @@ css_code = """
 }
 .footer { text-align:center; color:white; font-size:16px; padding:10px; }
 
-/* CSS cho ô Textbox ngày tháng (dùng class) */
+/* CSS for the date Textbox (using class) */
 .custom-date-box input {
     background-color: #f0f8ff !important;
     border: 2px solid #0056b3 !important;
@@ -525,7 +511,8 @@ css_code = """
     box-shadow: 0 0 8px rgba(255,170,0,0.5) !important;
 }
 
-/* --- CSS ĐỂ CĂN GIỮA VÀ LÀM TO TABS --- */
+/* --- CSS TO CENTER AND ENLARGE TABS --- */
+/* 1. Center the tab bar */
 div[role="tablist"] {
     display: flex !important;
     justify-content: center !important;
@@ -533,6 +520,7 @@ div[role="tablist"] {
     gap: 10px !important;
     padding-top: 10px !important;
 }
+/* 2. Enlarge the TAB BUTTONS */
 div[role="tablist"] button {
     font-size: 18px !important;
     padding: 15px 30px !important;
@@ -545,6 +533,7 @@ div[role="tablist"] button {
     border: 2px solid #0056b3 !important; 
     border-bottom: none !important;
 }
+/* 3. Style for the SELECTED tab */
 div[role="tablist"] button[aria-selected="true"] {
     background-color: #0056b3 !important;
     color: white !important;
@@ -556,7 +545,7 @@ with gr.Blocks(css=css_code) as iface:
     gr.Markdown("---")
     
     with gr.Tabs():
-        # --- TAB 1 (Lịch sử) ---
+        # --- TAB 1 (Historical) ---
         with gr.Tab(label="📈 Historical Analysis"):
             with gr.Column():
                 gr.Markdown("<h2 style='color:white;font-size:28px;'>📈 Historical Data Analysis</h2>")
@@ -593,25 +582,23 @@ with gr.Blocks(css=css_code) as iface:
         # --- TAB 3 (Hourly Forecast) ---
         with gr.Tab(label="🕒 Hourly Forecast"):
             with gr.Column():
-                # Sửa lỗi chính tả trong tiêu đề của bạn
                 gr.Markdown("<h2 style='color:white;font-size:28px;'>🕒 3-Hour Hourly Forecast</h2>")
                 hourly_cards_output = gr.HTML()
                 hourly_plot_output = gr.Plot()
 
     gr.Markdown("---")
-    # Sửa lỗi chính tả trong footer của bạn
     gr.Markdown("© 2025 - Machine Learning Project: Hanoi Temperature Forecasting - Group 3 - DSEB 65B", elem_classes=["footer"])
 
-    # --- CÁC EVENT HANDLER ---
+    # --- EVENT HANDLERS ---
     
-    # 1. Event load (cho 2 tab dự báo)
+    # 1. Page load event (for forecast tabs)
     iface.load(
         fn=load_all_forecasts, 
         inputs=None, 
         outputs=[daily_plot_output, daily_cards_output, hourly_plot_output, hourly_cards_output]
     )
     
-    # 2. Event click (cho tab lịch sử)
+    # 2. Button click event (for historical tab)
     submit_btn.click(
         fn=analyze_history,
         inputs=[start_date_input, end_date_input],
