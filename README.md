@@ -14,7 +14,7 @@ We leverage both **daily and hourly weather data** to explore how granularity af
 
 ## 📁 Project Structure
 
-PROJECT-MACHINE-LEARNING/
+```PROJECT-MACHINE-LEARNING/
 │
 ├── data/ # Raw and processed data used for training and evaluation
 │ ├── processed/ # Cleaned and transformed datasets
@@ -96,7 +96,7 @@ PROJECT-MACHINE-LEARNING/
 
 9. **Deployment with ONNX**
    - Convert the best model to **ONNX** for efficient deployment.
-   - Reduce latency and enable cross-platform inference.
+   - Reduce latency and enable cross-platform inference.```
 
 ---
 
