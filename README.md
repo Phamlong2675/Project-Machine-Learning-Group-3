@@ -14,7 +14,8 @@ We leverage both **daily and hourly weather data** to explore how granularity af
 
 ## 📁 Project Structure
 
-```PROJECT-MACHINE-LEARNING/
+```
+PROJECT-MACHINE-LEARNING/
 │
 ├── data/ # Raw and processed data used for training and evaluation
 │ ├── processed/ # Cleaned and transformed datasets
@@ -52,8 +53,8 @@ We leverage both **daily and hourly weather data** to explore how granularity af
 │ └── Model_retraining.ipynb # Notebook for retraining the model with updated data
 │
 ├── app.py # User Interface (UI) script — web/app front-end to interact with the model
-└── README.md # Project overview and documentation```
-
+└── README.md # Project overview and documentation
+```
 
 ---
 
